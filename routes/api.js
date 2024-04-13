@@ -30,23 +30,23 @@ loghandler = {
 	noapikey: {
 		status: 403,
 		message: "Masukkan parameter apikey",
-		maintanied_by: `Zeltoria`,
+		maintanied_by: `Ririn`,
 	},
 	error: {
 		status: 503,
 		message: "Sedang Dalam Perbaikan Cuy",
-		maintanied_by: `Zeltoria`,
+		maintanied_by: `Ririn`,
 	},
 	apikey: {
 		status: 403,
 		message:
 			"Forbiden, Invalid apikey, hubungi saya di whatsapp untuk mendapatkan apikey anda",
-		maintanied_by: `Zeltoria`,
+		maintanied_by: `Ririn`,
 	},
 	noturl: {
 		status: 403,
 		message: "Forbiden, Invlid url, masukkan parameter url",
-		maintanied_by: `Zeltoria`,
+		maintanied_by: `Ririn`,
 	},
 };
 
@@ -399,7 +399,7 @@ router.get("/download/pinterest", async (req, res, next) => {
 	if (!url)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter q",
 		});
 	if (listkey.includes(apikey)) {
@@ -426,8 +426,8 @@ router.get("/download/tiktok", (req, res, next) => {
 	if (!url)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
-			message: "Linknya Mana Anying?",
+			creator: `Ririn`,
+			message: "Linknya Mana Njir?",
 		});
 	if (listkey.includes(apikey)) {
 		Tiktok(url).then((data) => {
@@ -447,8 +447,8 @@ router.get("/download/ytmp3", async (req, res, next) => {
 	if (!url)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
-			message: "Linknya Mana Anying?",
+			creator: `Ririn`,
+			message: "Linknya Mana Njir?",
 		});
 	if (listkey.includes(apikey)) {
 		const { id, thumbnail, audio: _audio, title } = await scr.youtubedlv2(url);
@@ -480,8 +480,8 @@ router.get("/download/ytmp4", async (req, res, next) => {
 	if (!url)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
-			message: "Linknya Mana Anying?",
+			creator: `Ririn`,
+			message: "Linknya Mana Njir?",
 		});
 	if (listkey.includes(apikey)) {
 		const { id, thumbnail, video: _video, title } = await scr.youtubedlv2(url);
@@ -576,7 +576,7 @@ router.get("/news/tempo", async (req, res, next) => {
 	if (!url)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter type",
 		});
 	if (listkey.includes(apikey)) {
@@ -604,7 +604,7 @@ router.get("/news/antara", async (req, res, next) => {
 	if (!url)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter type",
 		});
 	if (listkey.includes(apikey)) {
@@ -613,7 +613,7 @@ router.get("/news/antara", async (req, res, next) => {
 			.then((data) => {
 				var result = data;
 				res.json({
-					author: "Zeltoria",
+					author: "Ririn",
 					result,
 				});
 			})
@@ -635,7 +635,7 @@ router.get("/news/kumparan", async (req, res, next) => {
 			.then((data) => {
 				var result = data;
 				res.json({
-					author: "Zeltoria",
+					author: "Ririn",
 					result,
 				});
 			})
@@ -656,7 +656,7 @@ router.get("/photooxy/flaming", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter text",
 		});
 	if (listkey.includes(apikey)) {
@@ -682,7 +682,7 @@ router.get("/photooxy/shadow-sky", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter text",
 		});
 	if (listkey.includes(apikey)) {
@@ -708,7 +708,7 @@ router.get("/photooxy/metallic", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter text",
 		});
 	if (listkey.includes(apikey)) {
@@ -734,7 +734,7 @@ router.get("/photooxy/naruto", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter text",
 		});
 	if (listkey.includes(apikey)) {
@@ -761,7 +761,7 @@ router.get("/photooxy/pubg-mobile", async (req, res, next) => {
 	if (!text || !text2)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter text & text2",
 		});
 	if (listkey.includes(apikey)) {
@@ -789,7 +789,7 @@ router.get("/search/film", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "Query Nya Mana Vangsat?",
 		});
 	if (listkey.includes(apikey)) {
@@ -815,7 +815,7 @@ router.get("/search/soundcloudsearch", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "Query Nya Mana Vangsat?",
 		});
 	if (listkey.includes(apikey)) {
@@ -841,7 +841,7 @@ router.get("/search/wallpaper", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "Query Nya Mana Vangsat?",
 		});
 	if (listkey.includes(apikey)) {
@@ -868,7 +868,7 @@ router.get("/search/pinterest", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "Query Nya Mana Vangsat?",
 		});
 	if (listkey.includes(apikey)) {
@@ -2838,7 +2838,7 @@ router.get("/other/github-stalk", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter username",
 		});
 	if (listkey.includes(apikey)) {
@@ -2868,7 +2868,7 @@ router.get("/other/hilih", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter kata",
 		});
 	if (listkey.includes(apikey)) {
@@ -2897,7 +2897,7 @@ router.get("/other/kodepos", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter kota",
 		});
 	if (listkey.includes(apikey)) {
@@ -2945,7 +2945,7 @@ router.get("/other/kbbi", async (req, res, next) => {
 	if (!text)
 		return res.json({
 			status: false,
-			creator: `Zeltoria`,
+			creator: `Ririn`,
 			message: "masukan parameter kata",
 		});
 	if (listkey.includes(apikey)) {
